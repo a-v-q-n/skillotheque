@@ -1,0 +1,32 @@
+# Emballe chaque skill en .zip (le dossier du skill à la racine, comme l'attend claude.ai)
+# et publie les zips dans la release « skills », que le README pointe via releases/latest.
+name: Emballer les skills
+
+on:
+  push:
+    branches: [main]
+    paths: ['skills/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  emballer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Zipper chaque skill
+        run: |
+          mkdir dist
+          cd skills
+          for d in */; do
+            nom="${d%/}"
+            zip -rq "../dist/$nom.zip" "$nom" -x '*.DS_Store'
+          done
+      - name: Publier dans la release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view skills >/dev/null 2>&1 || gh release create skills --title "Skills" --notes "Les skills à importer dans claude.ai. Mis à jour à chaque modification." --latest
+          gh release upload skills dist/*.zip --clobber
