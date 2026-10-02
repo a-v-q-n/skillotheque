@@ -1,4 +1,4 @@
-# Skills AVQN
+# Skillothèque AVQN
 
 Des skills pour Claude, développés pour les clients d'[AVQN](https://avqn.ch). Un skill s'installe une fois dans Claude, puis se relance autant de fois qu'on veut, simplement en le demandant.
 
@@ -6,8 +6,8 @@ Des skills pour Claude, développés pour les clients d'[AVQN](https://avqn.ch).
 
 | Skill | À quoi il sert | Télécharger |
 |---|---|---|
-| [Créer son ton de voix](skills/creer-son-ton-de-voix/SKILL.md) | Claude vous accompagne pas à pas pour capturer votre façon d'écrire et en faire votre skill de ton de voix, pour que tout ce qu'il rédige ensuite sonne comme vous. | [creer-son-ton-de-voix.zip](https://github.com/a-v-q-n/skills-clients/releases/latest/download/creer-son-ton-de-voix.zip) |
-| [Créer son contexte personnel](skills/creer-son-contexte-personnel/SKILL.md) | Claude vous interroge en profondeur (parcours, carrière, projets, valeurs, goûts, voyages) et en tire votre skill « tout savoir sur moi », rangé par tiroirs, qu'il consulte dès que vous connaître améliore sa réponse. | [creer-son-contexte-personnel.zip](https://github.com/a-v-q-n/skills-clients/releases/latest/download/creer-son-contexte-personnel.zip) |
+| [Créer son ton de voix](skills/creer-son-ton-de-voix/SKILL.md) | Claude vous accompagne pas à pas pour capturer votre façon d'écrire et en faire votre skill de ton de voix, pour que tout ce qu'il rédige ensuite sonne comme vous. | [creer-son-ton-de-voix.zip](https://github.com/a-v-q-n/skillotheque/releases/latest/download/creer-son-ton-de-voix.zip) |
+| [Créer son contexte personnel](skills/creer-son-contexte-personnel/SKILL.md) | Claude vous interroge en profondeur (parcours, carrière, projets, valeurs, goûts, voyages) et en tire votre skill « tout savoir sur moi », rangé par tiroirs, qu'il consulte dès que vous connaître améliore sa réponse. | [creer-son-contexte-personnel.zip](https://github.com/a-v-q-n/skillotheque/releases/latest/download/creer-son-contexte-personnel.zip) |
 
 ## Installer un skill
 
